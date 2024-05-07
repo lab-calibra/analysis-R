@@ -7,7 +7,7 @@ theme_set(theme_sjplot())
 library(mice)
 
 # Load the data
-data <- read.csv("C:\\Users\\jonaslab cbr\\OneDrive - Centre for Brain Research\\CBR\\Diet_Analysis\\Analysis\\COG_Diet_ForMultipleImputation.csv")
+data <- read.csv(path)
 
 # Auto-convert all categorical variables into factors
 binary_columns <- sapply(data, function(x) all(x %in% c(0, 1, 2)))
